@@ -17,8 +17,8 @@ La playlist viene rigenerata ogni giorno da una GitHub Action.
 - Canali FAST/VOD italiani: Pluto TV, Samsung TV Plus, Rakuten TV (`lists/zz_vod_it.md`)
 
 Rispetto alla playlist originale: i gruppi seguono le sezioni delle liste,
-l'EPG è limitato alle sorgenti italiane, i canali segnati come non funzionanti
-e le ritrasmissioni di terzi sono esclusi.
+l'EPG è limitato alle sorgenti italiane e i canali segnati come non
+funzionanti sono esclusi.
 
 I canali con `Ⓖ` funzionano solo da un indirizzo IP italiano.
 

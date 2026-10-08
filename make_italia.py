@@ -17,8 +17,6 @@ SOURCES = [
     ("zz_vod_it.md", "VOD Italia"),
 ]
 COUNTRY_CODE = "IT"
-# Ritrasmissioni di terzi (non il CDN dell'emittente): escluse per prudenza.
-EXCLUDED_HOSTS = ("netplus.ch",)
 
 
 def fetch(path):
@@ -84,7 +82,7 @@ def main():
             group = f"{prefix} - {section}" if section else prefix
             entry = to_m3u_line(group, line)
             url = entry.rsplit("\n", 1)[1]
-            if url in seen or any(host in url for host in EXCLUDED_HOSTS):
+            if url in seen:
                 continue
             seen.add(url)
             lines.append(entry + "\n")
